@@ -12,7 +12,6 @@ pkg install -y git tsu python wpa-supplicant pixiewps iw
 git clone https://github.com/ITSN0B1T4/wifi_hack
 cd wifi_hack
 chmod +x wifi.py
-sudo python wifi.py --help
 ```
 #### Help : `sudo python wifi.py --help`
 #### Example : `sudo python wifi.py -i wlan0 -K`
