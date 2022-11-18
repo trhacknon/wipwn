@@ -570,9 +570,11 @@ class Companion:
         return False
 
     def __credentialPrint(self, wps_pin=None, wpa_psk=None, essid=None):
-        print(f"[\033[1;32m+\033[1;37m] WPS PIN: '{wps_pin}'")
-        print(f"[\033[1;32m+\033[1;37m] WPA PSK: '{wpa_psk}'")
-        print(f"[\033[1;32m+\033[1;37m] AP SSID: '{essid}'")
+        print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print(f"[\033[1;32m+\033[1;37m] AP SSID: {essid}")
+        print(f"[\033[1;32m+\033[1;37m] WPS PIN: {wps_pin}")
+        print(f"[\033[1;32m+\033[1;37m] WPA PSK: {wpa_psk}")
+        print(f"[\033[1;32m+\033[1;37m] THANKS FOR USING!")
 
     def __saveResult(self, bssid, essid, wps_pin, wpa_psk):
         if not os.path.exists(self.reports_dir):
