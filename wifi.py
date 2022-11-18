@@ -1,20 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #Open Source Code.No Need More Modification.
-import sys
-import subprocess
-import os
-import tempfile
-import shutil
-import re
-import codecs
-import socket
-import pathlib
-import time
+import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, csv
 from datetime import datetime
-import collections
-import statistics
-import csv
 from typing import Dict
 os.system('clear')
 print('[\033[1;33m*\033[1;37m] WIFI HACKING\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
