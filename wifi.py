@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #Open Source Code.No Need More Modification.
-import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, csv
+import sys
+import subprocess
+import os
+import tempfile
+import shutil
+import re
+import codecs
+import socket
+import pathlib
+import time
 from datetime import datetime
-from typing import Dict
-os.system('clear')
+import collections
+import statistics
+import csv
+from typing import Dictos.system('clear')
 print('[\033[1;33m*\033[1;37m] WIFI HACKING (1.0.0)\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
 class NetworkAddress:
     def __init__(self, mac):
