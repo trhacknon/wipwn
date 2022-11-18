@@ -15,7 +15,9 @@ from datetime import datetime
 import collections
 import statistics
 import csv
-from typing import Dictos.system('clear')
+from typing import Dict
+
+os.system('clear')
 print('[\033[1;33m*\033[1;37m] WIFI HACKING (1.0.0)\n[\033[1;33m*\033[1;37m] MODIFIED BY @MOHAMMAD ALAMIN\n[\033[1;33m*\033[1;37m] TEAM TOXINUM\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
 class NetworkAddress:
     def __init__(self, mac):
