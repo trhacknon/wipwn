@@ -17,6 +17,7 @@ import statistics
 import csv
 from typing import Dict
 os.system('clear')
+print('[*] WIFI HACKING\n')
 class NetworkAddress:
     def __init__(self, mac):
         if isinstance(mac, int):
