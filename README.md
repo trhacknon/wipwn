@@ -1,6 +1,5 @@
-## Wifi_Hack
-### Hack WIfi Using Termux! (Requires Root)
-
+<h1 align="center">WEPWN</h1>
+<h4 align="center">Hack WIfi Using Termux! (Requires Root)</h4>
 <p align="center"><img src=".assets/demo2.gif"></p>
 
 ### Installation :
