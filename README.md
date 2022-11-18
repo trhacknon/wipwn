@@ -8,8 +8,8 @@
 pkg update && pkg upgrade -y
 pkg install -y root-repo -y
 pkg install -y git tsu python termux-api wpa-supplicant pixiewps iw
-git clone https://github.com/ITSN0B1T4/wepwn
-cd wepwn
+git clone https://github.com/ITSN0B1T4/WEPWN
+cd WEPWN
 chmod +x wepwn.py
 ```
 #### Help : `sudo python wepwn.py --help`
