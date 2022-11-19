@@ -3,15 +3,15 @@
 
 #### Start
 
-<p align="center"><img src=".assets/demo2.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ITSN0B1T4/itsn0b1t4.github.io/main/wepwn/.assets/demo2.png"></p>
 
 #### Cracked
 
-<p align="center"><img src=".assets/demo3.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ITSN0B1T4/itsn0b1t4.github.io/main/wepwn/.assets/demo3.png"></p>
 
 #### Autostart if failed 
 
-<p align="center"><img src=".assets/demo4.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ITSN0B1T4/itsn0b1t4.github.io/main/wepwn/.assets/demo4.png"></p>
 
 ### Installation :
 
