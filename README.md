@@ -9,7 +9,7 @@
 
 <p align="center"><img src=".assets/demo3.png"></p>
 
-#### Autostart
+#### Autostart if failed 
 
 <p align="center"><img src=".assets/demo4.png"></p>
 
