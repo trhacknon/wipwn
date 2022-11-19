@@ -27,7 +27,8 @@ chmod +x wepwn.py
 #### Example : `sudo python wepwn.py -i wlan0 -K`
 
 #### Note: 
-**First turn off your Wifi.**
++ **First turn off your Wifi.**
++ **Turn on Hotspot.**
 - Show avaliable networks and start Pixie Dust attack on a specified network.
 - `sudo python wepwn.py -i wlan0 -K`
 - - Start Pixie Dust attack on a specified BSSID:
@@ -62,5 +63,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ````
+
++ **IF FAILED TURN OFF LOCATION IF TURNED ON.**
 
 Repo : <a href="https://github.com/ITSN0B1T4/wepwn"> Here </a>
