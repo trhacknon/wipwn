@@ -68,7 +68,7 @@ SOFTWARE.
 
 Repo : <a href="https://github.com/ITSN0B1T4/wepwn"> Here </a>
 
-##### Modify History : rofl0r => Biri_B@B@ => Mohammad_Alamin (Toxinum
+##### Modify History : rofl0r => Biri_B@B@ => Mohammad_Alamin (Toxinum)
 <div align="center">
 <h3>━━━━ Connect with me ━━━━</h3>
 <a href="https://fb.com/TOXINUM" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="TOXIC-VIRUS" height="30" width="40" /></a>
