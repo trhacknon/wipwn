@@ -1,4 +1,4 @@
 name = "wipwn"
 version = "1.0.1"
-developer = "MOHAMMAD ALAMIN"
-team = "TOXINUM"
+developer = ""
+team = ""
