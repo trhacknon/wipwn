@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Modify History : rofl0r => Biri_B@B@ => Mohammad_Alamin (Toxinum)
+# Modify History : brain of a good man => anonymous => trhacknon
 # Open Source Code.No Need More Modification.
 import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, collections, csv, http.client, marshal
 from time import sleep 
